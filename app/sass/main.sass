@@ -1,0 +1,132 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+// Пользовательские стили
+body
+	background: url(https://html5book.ru/wp-content/uploads/2015/07/background39.png)
+
+.grid
+	display: grid
+
+.main-header
+	min-height: 100vh
+	background-size: cover
+	background-position: center
+	position: relative
+	align-content: center
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: $dark
+		opacity: .80
+
+	.header-content
+		z-index: 1
+		color: #fff
+		text-align: center
+		padding: 60px $gutter
+		h1
+			font-size: 80px
+			font-family: 'Volkhov' serif
+			margin: 13px
+		h2
+			font-size: 25px
+			font-family: 'Volkhov', serif
+			margin: 0 0 35px
+			font-weight: normal
+		.button
+		  text-decoration: none
+		  outline: none
+		  display: inline-block
+		  width: 140px
+		  height: 45px
+		  margin: 10px 20px
+		  line-height: 45px
+		  border-radius: 45px
+		  font-family: 'Montserrat', sans-serif
+		  font-size: 11px
+		  text-transform: uppercase
+		  text-align: center
+		  letter-spacing: 3px
+		  font-weight: 600
+		  color: #524f4e
+		  background: white
+		  box-shadow: 0 8px 15px rgba(0,0,0,.1)
+		  transition: .3s
+		a:hover
+		  background: #c49ed1
+		  box-shadow: 0 15px 20px rgba(46,100,157,.4)
+		  color: white
+		  transform: translateY(-10px)
+		
+
+#menu
+	font-size: 20px 
+	width: 100%;
+	margin: 0px;
+	padding: 0;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 50px;
+	background: #7C487A
+#menu ul 
+	padding: 0;
+	margin: 0;
+	width: 100%
+#menu a
+	color: #fff
+#menu li
+	display: inline;
+	list-style: none;
+	margin: 5px 20px
+#menu li a
+	padding: 5px 10px
+	color: #fff
+	text-decoration: none
+#menu li a:hover
+    background: #36c;
+    color: #ff0
+#menu.default 
+    width: 100%;
+    top: 0 
+    left: 0
+#menu.fixed 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+
+
+
+
+
+.about_me
+	margin: auto
+	text-align: center
+	display: grid
+	justify-content: center
+	width: 700px
+	.about_me_string
+		font-size: 35px
+		margin: 60px 
+	.foto_me
+		height: 380px
+	.objective
+		margin: 0 70px 0 70px
+		width: 100%
+		font-size: 25px
+		.objective a
+
+			
+			
+		
+
+
+@import "media" // Всегда в конце
