@@ -5,7 +5,7 @@
 
 // Пользовательские стили
 body
-	background: url(https://html5book.ru/wp-content/uploads/2015/07/background39.png)
+	background: url(https://html5book./wp-content/uploads/2015/07/background39.png)
 
 .grid
 	display: grid
@@ -111,7 +111,7 @@ body
 	text-align: center
 	.about_me_string
 		font-size: 30px
-		margin: 2% 2% 
+		margin: 4% 4% 
 	.foto_me
 	.objective
 		text-align: center
@@ -121,21 +121,83 @@ body
 		.objective a
 
 .mb_parallax_container 
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
-  padding-top: 20vh;
+  padding-top: 10vh;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 
 
 #mb_parallax_one 
-  background-image: url(/img/parallax.jpg);
+  background-image: url(/img/paralaks.jpg);
 
 
 
-.my_skills
-	height: 2000px
+.my_skills 
+	text-align: center
+	font-size: 30px
+
+.item
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 400px 400px 400px;
+	margin-top: 70px
+	margin-left: 200px
+	justify-content: center;
+	.circle 
+		fill: none;
+		stroke: #fff;
+		stroke-width: 9px;
+	.circle2_html
+		fill: transparent;
+		stroke: #6D406B;
+		stroke-width: 9px;
+		stroke-dasharray: 990px;
+		stroke-dashoffset: 610px;
+		transform: rotate(-90deg)   translateX(-120px);
+	.circle2_css
+		fill: transparent;
+		stroke: #6D406B;
+		stroke-width: 9px;
+		stroke-dasharray: 965px;
+		stroke-dashoffset: 610px;
+		transform: rotate(-90deg)   translateX(-120px);
+	.circle2_js
+		fill: transparent;
+		stroke: #6D406B;
+		stroke-width: 9px;
+		stroke-dasharray: 940px;
+		stroke-dashoffset: 610px;
+		transform: rotate(-90deg)   translateX(-120px);
+#t1
+	font-size: 25px
+	fill: #6D406B
+	text-align: center
+
+.text
+	margin-left: 50px
+	height: 100px
+
+
+
+.my_portfolio
+	height: 800px
+	text-align: center
+	margin-top: 4%
+
+
+.mb_parallax_container_contact_me
+  height: 90vh;
+  width: 100vw;
+  padding-top: 10vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+#contact_me
+	background-image: url(/img/paralax_contact_me.jpg)
+
 
 
 @import "media" // Всегда в конце
