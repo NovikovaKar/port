@@ -68,39 +68,39 @@ body
 
 #menu
 	font-size: 20px 
-	width: 100%;
-	margin: 0px;
-	padding: 0;
-	text-transform: uppercase;
-	text-align: center;
-	line-height: 50px;
+	width: 100%
+	margin: 0px
+	padding: 0
+	text-transform: uppercase
+	text-align: center
+	line-height: 50px
 	background: #7C487A
 #menu ul 
-	padding: 0;
-	margin: 0;
+	padding: 0
+	margin: 0
 	width: 100%
 #menu a
 	color: #fff
 #menu li
-	display: inline;
-	list-style: none;
+	display: inline
+	list-style: none
 	margin: 5px 20px
 #menu li a
 	padding: 5px 10px
 	color: #fff
 	text-decoration: none
 #menu li a:hover
-    background: #36c;
-    color: #ff0
+    background: #CB83D8
+    color: #fff
 #menu.default 
-    width: 100%;
+    width: 100%
     top: 0 
     left: 0
 #menu.fixed 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
 
 
 
@@ -121,16 +121,15 @@ body
 		.objective a
 
 .mb_parallax_container 
-  height: 90vh;
-  width: 100vw;
-  padding-top: 10vh;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+	width: 100vw
+	padding-top: 10vh
+	background-attachment: fixed
+	background-size: cover
+	background-repeat: no-repeat
 
 
 #mb_parallax_one 
-  background-image: url(/img/paralaks.jpg);
+  background-image: url(/img/paralaks.jpg)
 
 
 
@@ -138,66 +137,157 @@ body
 	text-align: center
 	font-size: 30px
 
-.item
-	display: grid;
-	grid-template-rows: auto;
-	grid-template-columns: 400px 400px 400px;
+.grid_item_circle
+	display: grid
+	justify-content: center
+	grid-template-columns: repeat(auto-fit, minmax(450px, 0.2fr))
 	margin-top: 70px
 	margin-left: 200px
-	justify-content: center;
+	min-height: 500px
+	column-width: 200px
 	.circle 
-		fill: none;
-		stroke: #fff;
-		stroke-width: 9px;
+		fill: none
+		stroke: #fff
+		stroke-width: 9px
 	.circle2_html
-		fill: transparent;
-		stroke: #6D406B;
-		stroke-width: 9px;
-		stroke-dasharray: 990px;
-		stroke-dashoffset: 610px;
-		transform: rotate(-90deg)   translateX(-120px);
+		fill: transparent
+		stroke: #6D406B
+		stroke-width: 9px
+		stroke-dasharray: 990px
+		stroke-dashoffset: 610px
+		transform: rotate(-90deg)   translateX(-120px)
 	.circle2_css
-		fill: transparent;
-		stroke: #6D406B;
-		stroke-width: 9px;
-		stroke-dasharray: 965px;
-		stroke-dashoffset: 610px;
-		transform: rotate(-90deg)   translateX(-120px);
+		fill: transparent
+		stroke: #6D406B
+		stroke-width: 9px
+		stroke-dasharray: 965px
+		stroke-dashoffset: 610px
+		transform: rotate(-90deg)   translateX(-120px)
 	.circle2_js
-		fill: transparent;
-		stroke: #6D406B;
-		stroke-width: 9px;
-		stroke-dasharray: 940px;
-		stroke-dashoffset: 610px;
-		transform: rotate(-90deg)   translateX(-120px);
+		fill: transparent
+		stroke: #6D406B
+		stroke-width: 9px
+		stroke-dasharray: 940px
+		stroke-dashoffset: 610px
+		transform: rotate(-90deg)   translateX(-120px)
 #t1
 	font-size: 25px
 	fill: #6D406B
 	text-align: center
+h3
+	margin-left: -130px
 
 .text
-	margin-left: 50px
 	height: 100px
 
 
 
 .my_portfolio
-	height: 800px
+	min-height: 550px
 	text-align: center
 	margin-top: 4%
+.portfolio_images
+	display: grid
+	grid-template-columns: repeat(auto-fit, minmax(300px, 0.2fr))
+	justify-content: center
+	grid-gap: 0px
+	margin-top: 50px
+	max-width: 100%
+	.image
+		width: 260px
+		height: 240px
+		margin: 50px
+		cursor: zoom-in
+.popup 
+	position: absolute
+	height: 100%
+	width: 100%
+	top: 0
+	left: 0
+	display: none
+	text-align: center
 
+.popup_bg 
+	background: rgba(0,0,0,0.3)
+	position: fixed
+	z-index: 1
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	width: auto
+  	height: auto
+
+.popup_img 
+	position: fixed
+	z-index: 2
+	left: 50%
+	top: 50%
+	transform: translate(-50%,-50%)
+	max-height: 90%
+
+.popup_img 
+  pointer-events: none
+
+
+.contact_me
+	text-align: center
+	font-size: 30px
+	color: #F0F0F0
 
 .mb_parallax_container_contact_me
-  height: 90vh;
-  width: 100vw;
-  padding-top: 10vh;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 100vw
+  padding-top: 10vh
+  background-attachment: fixed
+  background-size: cover
+  background-repeat: no-repeat
 
-#contact_me
+#contact_me_parallax_container
 	background-image: url(/img/paralax_contact_me.jpg)
 
+.leave_me_message
+	font-size: 20px
+	color: #fff
 
+#name
+	width: 800px
+	height: 50px
+	opacity: 0.7
+	margin-top: 30px
+#email
+	width: 800px
+	height: 50px
+	opacity: 0.7
+	margin-top: 30px
+#message
+	width: 800px
+	height: 180px
+	opacity: 0.7
+	margin-top: 30px
+
+.button_send
+	text-decoration: none
+	outline: none
+	display: inline-block
+	width: 200px
+	height: 45px
+	margin: 30px 20px
+	line-height: 45px
+	border-radius: 45px
+	font-family: 'Montserrat', sans-serif
+	font-size: 11px
+	text-transform: uppercase
+	text-align: center
+	letter-spacing: 3px
+	font-weight: 600
+	color: #524f4e
+	background: white
+	box-shadow: 0 8px 15px rgba(0,0,0,.1)
+	transition: .3s
+	a:hover
+		background: #c49ed1
+		box-shadow: 0 15px 20px rgba(46,100,157,.4)
+		color: white
+		transform: translateY(-10px)
 
 @import "media" // Всегда в конце

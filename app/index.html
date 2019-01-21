@@ -11,8 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-	<!--Подключаем библиотеку-->
-	<script src="js/jquery-2.2.3.min.js"></script>
+
 
 </head>
 
@@ -24,69 +23,56 @@
 			<h1>Hi, I'm Karina Novikova</h1>
 			<h2>Front-end developer</h2>
 			<div class="header-buttons">
-				<a class="button" href="#">About</a>
+				<a class="button" href="#" >About</a>
 				<a href="#" class="button">Portfolio</a>
+			</div>
 		</div>
-	</div>
-</header>
+	</header>
 
-<main class="wrapper">	
-<div id="menu" class="default">
-        <ul>
-            <a>Karina Novikova</a>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">SKILLS</a></li>
-            <li><a href="#">CONTACT</a></li>
-        </ul>
-</div>
-</main>
-<div class="about_me">
+	
+		<section class="default" id="menu" >
+        	<ul>
+            	<a>Karina Novikova</a>
+            	<li><a href="#ex1">ABOUT</a></li>
+            	<li><a href="#ex2">PORTFOLIO</a></li>
+            	<li><a href="#ex3">SKILLS</a></li>
+            	<li><a href="#ex4">CONTACT</a></li>
+        	</ul>
+		</section>
+	
+	<section class="about_me" id="ex1">
+		<p class="about_me_string"> ABOUT ME </p>
+			<a class="foto_me"><img src="/img/iam.png"></a>
+				<div class = "objective"> 
+					<a>I would like to apply for a post of junior front-end developer. The reason why I decided to choose this post is my desire to create and implement visual and interactive elements in web application that users can actively engage with trough their web browser.</br>
+             		I consider myself to be responsible, purposeful, stress resistant and able to work in a multi-tasking environment. I like gaining knowledge and, as everything is constantly changing, I suppose this trait of my character is beneficial for this vacancy.</a>
+         		</div>
+    </section>
 
-<p class="about_me_string"> ABOUT ME </p>
-<a class="foto_me"><img src="/img/iam.png"></a>
-<div class = "objective"> 
-	<a>I would like to apply for a post of junior front-end developer. The reason why I decided to choose this post is my desire to create and implement visual and interactive elements in web application that users can actively engage with trough their web browser.</br>
-             I consider myself to be responsible, purposeful, stress resistant and able to work in a multi-tasking environment. I like gaining knowledge and, as everything is constantly changing, I suppose this trait of my character is beneficial for this vacancy.</a>
-
-
-         </div></div>
-
-</div>
-
-
- <div class="mb_parallax_container" id="mb_parallax_one">
-
-  <div class="mb_parallax_overlay">
-
-<section class="my_skills">
-
-<a class="my_skills">MY SKILLS </a>
-
-</section>
-<div class="my_skills_svg">
-	<div class="item" >
+	<section class="my_skills" id="ex3">
+		<div class="mb_parallax_container" id="mb_parallax_one">
+			<div class="mb_parallax_overlay">
+				<a class="my_skills">MY SKILLS </a>
+			<div class="my_skills_svg">
+				<div class="grid_item_circle" >
+					<div class="div_circle_html">
+ 						<svg class="circle_svg" >
+  							<circle class="circle" cx="90" cy="75" r="70">
+  							</circle>
+  							<circle class="circle2_html" cx="45" cy="89" r="70"></circle>
+ 		 					<text id="t1" x=65 y=83>90%</text>
+		1				</svg>
+							<h3 class="text"> HTML</h3>
+					</div>
 		<div class="div_circle_html">
- 		<svg class="circle_svg" >
-  		<circle class="circle" cx="90" cy="75" r="70">
-  		</circle>
-  			<circle class="circle2_html" cx="45" cy="89" r="70"></circle>
-  			<text id="t1" x=65 y=83>90%</text>
-		</svg>
-	</div>
-
-
-		<div class="div_circle_html">
-		<svg class="circle_svg" >
-  		<circle class="circle" cx="90" cy="75" r="70">
-  		</circle>
-  			<circle class="circle2_css" cx="45" cy="89" r="70"></circle>
-  			<text id="t1" x=65 y=83>80%</text>
-		</svg>
-		</div>
-
-
-		
+			<svg class="circle_svg" >
+  				<circle class="circle" cx="90" cy="75" r="70">
+  				</circle>
+  				<circle class="circle2_css" cx="45" cy="89" r="70"></circle>
+  				<text id="t1" x=65 y=83>80%</text>
+			</svg>
+		<h3 class="text"> CSS</h3>
+		</div>		
 		<div class="div_circle_js"></dir>
 		<svg class="circle_svg" >
   		<circle class="circle" cx="90" cy="75" r="70">
@@ -94,23 +80,17 @@
   			<circle class="circle2_js" cx="45" cy="89" r="70"></circle>
   			<text id="t1" x=65 y=83>75%</text>
 		</svg>
-	</div>
-
-
-
-			<h1 class="text"> HTML</h1>
-			<h1 class="text"> CSS</h1>
-			<h1 class="text"> JS</h1>
-
-
-			<div class="div_circle_photoshop"></dir>
-		<svg class="circle_svg" >
-  		<circle class="circle" cx="90" cy="75" r="70">
-  		</circle>
-  			<circle class="circle2_js" cx="45" cy="89" r="70"></circle>
-  			<text id="t1" x=65 y=83>80%</text>
-		</svg>
-	</div>
+			<h3 class="text"> JS</h3>
+		</div>
+		<div class="div_circle_photoshop"></dir>
+			<svg class="circle_svg" >
+  				<circle class="circle" cx="90" cy="75" r="70">
+  				</circle>
+  				<circle class="circle2_js" cx="45" cy="89" r="70"></circle>
+  					<text id="t1" x=65 y=83>80%</text>
+			</svg>
+			<h3 class="text">Photoshop</h3>
+		</div>
 
 
 <div class="div_circle_photoshop"></dir>
@@ -118,8 +98,9 @@
   		<circle class="circle" cx="90" cy="75" r="70">
   		</circle>
   			<circle class="circle2_js" cx="45" cy="89" r="70"></circle>
-  			<text id="t1" x=65 y=83>75%</text>
+  			<text id="t1" x=65 y=83>70%</text>
 		</svg>
+		<h3 class="text"> GIT</h3>
 	</div>
 
 	<div class="div_circle_photoshop"></dir>
@@ -129,48 +110,58 @@
   			<circle class="circle2_js" cx="45" cy="89" r="70"></circle>
   			<text id="t1" x=65 y=83>75%</text>
 		</svg>
+				<h3 class="text">gulp</h3>
 	</div>
-
-
-			<h1 class="text">Photoshop</h1>
-			<h1 class="text"> CSS</h1>
-			<h1 class="text"> JS</h1>
-	</svg>
+		</svg>
 </div>
-
-
 </div>
  </div>
 
 </div>
+	</section>
 
-
-<section class="my_portfolio">
-
+<section class="my_portfolio" id="ex2">
 <a class="my_skills">PORTFOLIO</a>
-
-
-
+	<div class="portfolio_images">
+		<img src="../img/portfolio_image1.jpg" class="image" title="Нажмите для увеличения изображения" width="100" tabindex="0"/>
+		<img src="../img/portfolio_image2.jpg" class="image" title="Нажмите для увеличения изображения" width="100" tabindex="0"/>
+		<img src="../img/portfolio_image3.jpg" class="image" title="Нажмите для увеличения изображения" width="100" tabindex="0"/>
+	</div>
 </section>
 
 
+<section class="contact_me" id="ex4">
+ <div class="mb_parallax_container_contact_me" id="contact_me_parallax_container">
+<div class="mb_parallax_overlay">
 
- <div class="mb_parallax_container_contact_me" id="contact_me">
+<a id="contact_me_main_text">CONTACT ME</a>
+</br>
 
-  <div class="mb_parallax_overlay">
-  	
-<section class="my_skills">
 
-<a class="my_skills">MY SKILLS </a>
+<div class="contact_me_inputs">
+	<input id="name" type="text" name="Name" placeholder="Name">
+<div class="input_email">
+<input id="email" type="text" name="Email" placeholder="Email">
+</div>
+<div class="input_message">
+<input id="message" type="text" name="Message" placeholder="Message">
+</div>
+</div>
 
+	<div class="contact_me_button">
+		<a class="button_send" href="#">Send</a>
+	</div>
+	</div>
+</div>
 </section>
 </div>
 </div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
-
+	
 
 
 </body>
